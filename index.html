@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="assets/main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="assets/style.css">
+    <title id="top">Aachen - Aix-la-Chapelle</title>
+</head>
+
+<body>
+    <header>
+        <h1>Aachen <span class="subtitle">(Aix-la-Chappelle)</span></h1>
+        <div>
+            <p>
+                Ex-la-Chapelle, la ville de tes ex
+            </p>
+        </div>
+        <img src="assets/imgs/logo.png" draggable="false" alt="Aachen" height="100px">
+    </header>
+    <div id="sommaire" style="width: 50%; margin:auto;">
+        <ol>
+            <li id="dummy">Sommaire en cours de chargement</li>
+        </ol>
+    </div>
+    <section id="presentation">
+        <h2>Présentation d'Aix-la-Chapelle</h2>
+        <h3>Aix-la-Chapelle (Aachen)</h3>
+
+        <h2>Histoire de la ville</h2>
+        <p>Aix-la-Chapelle, connue également sous le nom d'Aachen en allemand, est une ville historique située dans
+            l'ouest de l'Allemagne, près des frontières belge et néerlandaise. Fondée par les Romains il y a plus de
+            2000 ans, la ville a une histoire riche et fascinante.</p>
+        <p>La période la plus célèbre de l'histoire d'Aix-la-Chapelle remonte à l'époque de Charlemagne, roi des Francs
+            et empereur du Saint-Empire romain germanique. Charlemagne a choisi la ville comme résidence et a fait
+            construire la célèbre cathédrale d'Aix-la-Chapelle, qui est aujourd'hui un site du patrimoine mondial de
+            l'UNESCO.</p>
+
+        <h3>Attractions touristiques</h3>
+        <p>Aix-la-Chapelle est une destination touristique populaire, attirant des visiteurs du monde entier. La
+            cathédrale d'Aix-la-Chapelle est sans aucun doute l'attraction principale de la ville. C'est un chef-d'œuvre
+            architectural avec son architecture carolingienne et ses magnifiques fresques médiévales.</p>
+        <p>En plus de la cathédrale, les visiteurs peuvent explorer le centre historique de la ville avec ses ruelles
+            pittoresques, ses bâtiments historiques et ses charmantes places. Le marché d'Aix-la-Chapelle est également
+            un lieu incontournable, offrant une variété de produits locaux, notamment le célèbre "Printen", une sorte de
+            biscuit traditionnel.</p>
+        <p>Les amateurs d'histoire peuvent également visiter le musée Suermondt-Ludwig, qui abrite une impressionnante
+            collection d'œuvres d'art allant du Moyen Âge au modernisme. Les jardins d'Aix-la-Chapelle sont un endroit
+            idéal pour se détendre et profiter de la beauté de la nature.</p>
+
+        <h3>Gastronomie et festivals</h3>
+        <p>Aix-la-Chapelle offre également une cuisine délicieuse. Les visiteurs peuvent déguster des spécialités
+            locales telles que le "Sauerbraten" (rôti mariné), les "Bratwurst" (saucisses grillées) et le "Rheinischer
+            Sauerbraten" (variante locale du rôti mariné).</p>
+        <p>La ville accueille également plusieurs festivals tout au long de l'année, attirant un grand nombre de
+            visiteurs. Le festival du carnaval est l'un des plus populaires, avec des défilés colorés, des costumes
+            extravagants et une ambiance festive.</p>
+
+        <h3>Conclusion</h3>
+        <p>Aix-la-Chapelle est une ville historique qui mêle harmonieusement histoire, culture et beauté naturelle. Avec
+            sa cathédrale emblématique,ses ruelles pittoresques et sa cuisine délicieuse, la ville offre une expérience
+            inoubliable à ses visiteurs. Que vous soyez passionné d'histoire, amateur d'art ou simplement en quête de
+            nouvelles découvertes, Aix-la-Chapelle ne manquera pas de vous séduire.</p>
+
+        <p>Que ce soit pour admirer les trésors architecturaux, flâner dans les jardins paisibles, déguster des mets
+            savoureux ou participer à des festivités animées, Aix-la-Chapelle promet une immersion totale dans son riche
+            patrimoine et sa culture vibrante.</p>
+        <h3>Informations pratiques</h3>
+        <p>Aix-la-Chapelle est facilement accessible depuis plusieurs grandes villes européennes. L'aéroport le plus
+            proche est l'aéroport de Cologne-Bonn, situé à environ 80 kilomètres. La ville est également bien desservie
+            par les réseaux ferroviaire et routier.</p>
+        <p>En ce qui concerne l'hébergement, Aix-la-Chapelle propose une large gamme d'options, allant des hôtels de
+            luxe aux auberges et chambres d'hôtes plus abordables. Il est recommandé de réserver à l'avance, surtout
+            pendant les périodes de forte affluence touristique.</p>
+        <p>Enfin, n'oubliez pas de vous renseigner sur les horaires d'ouverture des attractions touristiques et de
+            vérifier les éventuelles restrictions dues à des événements spéciaux ou à des travaux de rénovation.</p>
+        <h3>Planifiez votre visite à Aix-la-Chapelle dès aujourd'hui !</h3>
+        <p>Que vous soyez passionné d'histoire, amateur d'art ou simplement curieux de découvrir de nouveaux endroits,
+            Aix-la-Chapelle a tout ce dont vous avez besoin pour une expérience mémorable. Ne manquez pas l'opportunité
+            d'explorer cette ville fascinante et de vous plonger dans son riche patrimoine culturel.</p>
+    </section>
+    <section>
+        <h2>Quelques données ...</h2>
+        <div style="display: flex;">
+            <table>
+                <tr>
+                    <th>Intitulé de la donnée</th>
+                    <th>Valeur</th>
+                    <th>Source</th>
+                </tr>
+                <tr>
+                    <td>Superficie</td>
+                    <td>160,8 km²</td>
+                    <td><a href="https://fr.wikipedia.org/wiki/Aix-la-Chapelle">Source</a></td>
+                </tr>
+                <tr>
+                    <td>Nombre d'habitants</td>
+                    <td>245 885</td>
+                    <td><a href="https://fr.wikipedia.org/wiki/Aix-la-Chapelle">Source</a></td>
+                </tr>
+                <tr>
+                    <td>Densité de population</td>
+                    <td>1 549 hab./km2</td>
+                    <td><a href="https://fr.wikipedia.org/wiki/Aix-la-Chapelle">Source</a></td>
+                </tr>
+                <tr>
+                    <td>Code postal</td>
+                    <td>52062</td>
+                    <td><a href="https://fr.wikipedia.org/wiki/Aix-la-Chapelle">Source</a></td>
+                </tr>
+                <tr>
+                    <td>Maire actuel</td>
+                    <td>Sibylle Keupen</td>
+                    <td><a href="https://fr.wikipedia.org/wiki/Aix-la-Chapelle">Source</a></td>
+                </tr>
+                <tr>
+                    <td>Rivière</td>
+                    <td>Wurm</td>
+                    <td><a href="https://fr.wikipedia.org/wiki/Aix-la-Chapelle">Source</a></td>
+                </tr>
+                <tr>
+                    <td>Villes jumelées (non exhaustif)</td>
+                    <td>Montebourg et Reims (France),Arlington (É-U)</td>
+                    <td><a href="https://fr.wikipedia.org/wiki/Aix-la-Chapelle">Source</a></td>
+                </tr>
+                <tr>
+                    <td>Date de fondation</td>
+                    <td>1306</td>
+                    <td><a href="https://fr.wikipedia.org/wiki/Aix-la-Chapelle">Source</a></td>
+                </tr>
+                <tr>
+                    <td>Taux de chômage</td>
+                    <td>6,1 %</td>
+                    <td><a href="https://fr.wikipedia.org/wiki/Aix-la-Chapelle">Source</a></td>
+                </tr>
+                <tr>
+                    <td>District</td>
+                    <td>Cologne</td>
+                    <td><a href="https://fr.wikipedia.org/wiki/Aix-la-Chapelle">Source</a></td>
+                </tr>
+                <tr>
+                    <td>Land</td>
+                    <td> Rhénanie-du-Nord-Westphalie</td>
+                    <td><a href="https://fr.wikipedia.org/wiki/Aix-la-Chapelle">Source</a></td>
+                </tr>
+                <tr>
+                    <td>Spécialité culinaire</td>
+                    <td>Printen</td>
+                    <td><a href="https://fr.wikipedia.org/wiki/Aix-la-Chapelle">Source</a></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <h2>Quelques monuments ...</h2>
+    <div class="grid-container">
+        <div class="grid-item image1">
+            <img src="assets/imgs/monu1.jpeg" alt="Image 1">
+        </div>
+        <div class="grid-item image2">
+            <img src="assets/imgs/monu2.png" alt="Image 2">
+        </div>
+        <div class="grid-item image3">
+            <img src="assets/imgs/monu3.jpeg" alt="Image 3">
+        </div>
+        <div class="grid-item image4">
+            <img src="assets/imgs/monu4.jpeg" alt="Image 4">
+        </div>
+    </div>
+
+    <style>
+        .person-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .person-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .person-card img {
+            max-width: 200px;
+            max-height: 200px;
+            object-fit: cover;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .person-card a {
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+    <h2>Quelques personnalités ...</h2>
+    <div class="person-container">
+        <div class="person-card">
+            <img src="assets/imgs/Charlemagne_denier_Mayence_812_814.jpg" alt="Person 1"
+                onclick="openImage('assets/imgs/Charlemagne_denier_Mayence_812_814.jpg')">
+            <a href="" target="_blank">Charlemagne</a>
+            <p>9/10/768 – 28/01/814</p>
+        </div>
+        <div class="person-card">
+            <img src="assets/imgs/alfred.jpeg" alt="Person 1" onclick="openImage('assets/imgs/alfred.jpep')">
+            <a href="" target="_blank">Alfred Neuwald</a>
+            <p>né le 12/01/1962</p>
+        </div>
+        <div class="person-card">
+            <img src="assets/imgs/Rezo_2019.jpg" alt="Person 2" onclick="openImage('assets/imgs/Rezo_2019.jpg')">
+            <a href="" target="_blank">Rezo</a>
+            <p>né le 14/08/1992</p>
+        </div>
+        <div class="person-card">
+            <img src="assets/imgs/440px-Ena_von_Baer.jpg" alt="Person 2"
+                onclick="openImage('assets/imgs/440px-Ena_von_Baer.jpg')">
+            <a href="" target="_blank">Ena von Baer</a>
+            <p>né le 28/11/1974</p>
+        </div>
+        <div class="person-card">
+            <img src="assets/imgs/Hugo_Erfurth_-_Portrait_Ludwig_Mies_van_der_Rohe,_1934.jpg" alt="Person 2"
+                onclick="openImage('assets/imgs/Hugo_Erfurth_-_Portrait_Ludwig_Mies_van_der_Rohe,_1934.jpg')">
+            <a href="" target="_blank">Ludwig Mies van der Rohe </a>
+            <p>27/03/1886 - 17/08/1969</p>
+        </div>
+
+        <div class="person-card">
+            <img src="assets/imgs/440px-Henri_Victor_Regnault.jpg" alt="Person 2"
+                onclick="openImage('assets/imgs/440px-Henri_Victor_Regnault.jpg')">
+            <a href="" target="_blank">Henri Victor Regnault</a>
+            <p>21/07/1810 - 19/01/1878</p>
+        </div>
+        <div class="person-card">
+            <img src="assets/imgs/800px-LaFee_-_Jetix-Award_-_YOU_2008_Berlin_(6836).jpg" alt="Person 2"
+                onclick="openImage('assets/imgs/800px-LaFee_-_Jetix-Award_-_YOU_2008_Berlin_(6836).jpg')">
+            <a href="https://fr.wikipedia.org/wiki/LaFee" target="_blank">Christina Klein, dite LaFee,</a>
+            <p>née le 9/09/1990</p>
+        </div>
+    </div>
+    <section>
+        <h2>Aachen sur la carte</h2>
+        <button onclick="setLocation()">Localisez-moi</button>
+        <div id="userLocation" class="hidden">
+            <p>
+                Latitude : <span id="latitude" class="number"></span>
+                Longitude : <span id="longitude" class="number"></span>
+                Distance : <span id="distance" class="number"></span>
+            </p>
+        </div>
+        <div id="map" style="height: 400px;"></div>
+
+    </section>
+
+    <script>
+        function openImage(imageUrl) {
+            window.open(imageUrl);
+        }
+    </script>
+    <footer>
+        <p>© Léon EDMEE 2023 </p>
+        <a href="#top">Retour en haut de page</a>
+        <div class="music-player">
+            <span id="play">Jouer</span>
+            <span id="pause">Pause</span>
+            <!-- slider du son -->
+            <input type="range" min="0" max="1" value="0.5" step="0.1" class="slider" id="slider-son">
+            <progress id="progression" value="0" max="100"></progress>
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+</html>
