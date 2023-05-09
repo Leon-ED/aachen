@@ -29,7 +29,7 @@ body {
     padding: 0;
     background-color: var(--bg);
     color: var(--black);
-    font-family: Parisine;
+    font-family: Parisine,Roboto,Arial;
 }
 
 h1 {
