@@ -151,3 +151,17 @@ footer{
 footer a {
     color: var(--yellow);
 }
+
+@media screen and (max-width: 800px) {
+    section {
+        max-width: 90%;
+    }
+
+    footer{
+        position: inherit;
+        flex-direction: column;
+        height: fit-content;
+    }
+}
+
+    
